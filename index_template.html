@@ -73,6 +73,16 @@
 
       .bio {
         margin-bottom: 3rem;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+      }
+
+      .profile-image {
+        width: 120px;
+        height: 120px;
+        border-radius: 60px;
+        object-fit: cover;
       }
 
       .social-links {
@@ -101,14 +111,17 @@
   <body>
     <aside>
       <div class="posts">
-          $body$
+        $body$
       </div>
     </aside>
 
     <main>
       <div class="bio">
-        <h1>Hello! 👋</h1>
-        <p>I'm a software engineer passionate about creating elegant solutions to complex problems. I specialize in web development and enjoy exploring new technologies.</p>
+        <img src="https://media.licdn.com/dms/image/v2/C4E03AQFZ5-SMKzH_GQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1598013504642?e=1738800000&v=beta&t=PxOtHZT89acCqSb4rOEUZEp7xu9XVPZu7JQ_qmde-Pw" alt="Profile" class="profile-image">
+        <div>
+          <h1>Hello! 👋</h1>
+          <p>I'm a software engineer passionate about creating elegant solutions to complex problems. I specialize in web development and enjoy exploring new technologies.</p>
+        </div>
       </div>
 
       <div class="social-links">

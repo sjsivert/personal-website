@@ -28,6 +28,6 @@ done
 
 pandoc \
 	--standalone \
-	--template template.html \
+	--template index_template.html \
 	_index.md \
 	-o index.html

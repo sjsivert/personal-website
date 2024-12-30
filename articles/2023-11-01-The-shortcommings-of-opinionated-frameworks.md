@@ -5,18 +5,12 @@ date: 2023-11-17 00:34:00 +0800
 categories: [Blogging, Opinion]
 tags: [favicon]
 ---
-
 Ever notice how leading experts in science often give cautious, reserved answers? That’s because they understand the nuances and complexities of their field, leading to the famous but unexciting response: 'it depends.’ In software development, I’ve found that people with strong opinions often fall into two categories: they’re either at the peak of the Dunning-Kruger curve or they just love to argue
 
-- [ ] TODO: Fikse dette. gjøre enklere...
-I don’t consider myself part of the latter group, and I can only hope I’m not in the former, even though statistically I have a higher probability to fall into that group.
+That said, I’d like to present an opinion that has developed over the course of my career as a software developer: I am not a fan of highly **opinionated frameworks.**..
 
-I don’t see myself in the latter camp, and I can only hope I’m not in the former—though, statistically speaking, I have a higher probability to be in that group. That said, I’d like to present an opinion that has developed over the course of my career as a software developer: I am not a fan of highly **opinionated frameworks.**.. I know, this isn’t exactly new ground on the internet. I might be beating a dead horse here, but I still hope to bring something fresh to the table by sharing my own experiences.
-
-TODO: Ikke være så forsiktig. "this is why"
 ![../assets/img/dunning-kruger.png](../assets/img/dunning-kruger.png)
 
-Before presenting my case and explaining how I arrived at this conclusion, I should clarify what I mean by an **opinionated framework.**
 An **opinionated framework** typically exhibits the following characteristics:
 
 - It enforces a specific way to structure your code~~.~~
@@ -25,7 +19,7 @@ An **opinionated framework** typically exhibits the following characteristics:
 
 Examples of opinionated frameworks include Angular, Django, and Ember, which provide strong conventions and tools that help maintain consistency but limit flexibility in how you can structure applications.
 
-Alright, let’s give credit where it’s due: opinionated frameworks aren’t all bad. In fact, they can be the reliable, albeit slightly bossy, teammate we didn’t know we needed. Sure, they have a strict way of doing things, but sometimes that’s exactly what helps keep the codebase from turning into spaghetti. Here are some reasons why some developers actually _like_ being told what to do.
+Opinionated frameworks aren’t all bad. In fact, they can be the reliable, albeit slightly bossy, teammate we didn’t know we needed. Sure, they have a strict way of doing things, but sometimes that’s exactly what helps keep the codebase from turning into spaghetti. Here are some reasons why some developers actually _like_ being told what to do.
 
 - Opinionated Establishing strong patterns makes it easy for everyone on the team to read and write code.
 - Consistent use of patterns simplifies onboarding to new codebases that share the same patterns as developers can quickly understand the structure and flow.
@@ -41,10 +35,9 @@ The argument for consistent use of patterns across codebases also has a downside
 
 Relying too heavily on any framework or external dependency can be a risky move. Opinionated frameworks lock your code into a “marriage” with a third party, meaning you lose a certain degree of freedom and end up somewhat at the mercy of that framework. This power dynamic becomes painfully clear whenever the framework’s creators roll out a major breaking update. The industry is full of such cautionary tales: the legendary Angular.js to Angular rewrite, the shift from React Classes to Hooks, and the ASP.NET to ASP.NET Core overhaul, just to name a few.
 
-I’ve witnessed one of these upgrade odysseys firsthand. I was on a team that got stuck on Ember version 3.28, while the latest version is currently 5.12. The frontend had originally been built on Ember 2, but since the business focused on tackling technical debt on the backend, the frontend upgrade kept getting delayed. By the time we circled back to it, upgrading had become a monumental task.
+I’ve witnessed one of these upgrade odysseys firsthand. I was on a team that got stuck on  a early Ember version. The business focused on tackling technical debt on the backend, the Ember frontend upgrade kept getting delayed. By the time they circled back to it, upgrading had become a monumental task.
 
-TODO: Kan fjerne detaljer. Gir ikke mening å ha det med.
-The team successfully migrated from Ember 2 to 3.28, but in the process, all their tests broke. To make matters worse, moving from 3.28 to 4.0.0 turned out to be an even bigger challenge. In the end, the team resigned themselves to using Ember 3.28—without any working unit tests, and no plan to upgrade...
+The team successfully migrated from  a ancient version of Ember to an "just" an old version of Ember, but in the process, all their tests broke. To make matters worse,  migrating to the latest version  turned out to be an even bigger challenge. In the end, the team resigned themselves to using the old version of Ember —without any working unit tests, and no plan to upgrade, because the business required their attention elsewhere.
 
 Frameworks, in general, aim to tackle common problems for you, freeing up your time to focus on the core domain logic. How many problems a framework solves is often tied to how opinionated it is. This is because well-defined constraints allow for generic solutions. But while generic code can be powerful, it’s often harder to read and reason about. For me, the tipping point where a framework shifts from a helpful tool to a stubborn constraint is when I lose the ability to understand what’s happening just by reading the code.
 If I can’t see how a function is called or lose the ability to trace the code trail to understand how it works, the framework has become too opinionated. This kind of abstraction is often called _magic_—where the framework handles things “automatically,” but without fully revealing how it all works.

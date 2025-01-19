@@ -6,6 +6,7 @@ categories:
   - Opinion
 tags:
   - favicon
+published: true
 ---
 
 In 2023, I attended a talk by Sven Peters from Atlassian titled _"Developer Joy - How Great Teams Get Sh%\*t Done"_ ([It’s a fantastic talk—you should check it out](https://www.youtube.com/watch?v=0wEmyhp6zK4)).

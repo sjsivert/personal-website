@@ -5,6 +5,7 @@ date: 17-11-2024
 read-time: 5
 categories: [Blogging, Opinion]
 tags: [favicon]
+published: false
 ---
 
 Ever notice how leading experts in science often give cautious, reserved answers? That’s because they understand the nuances and complexities of their field, leading to the famous but unexciting response: 'it depends.’ In software development, I’ve found that people with strong opinions often fall into two categories: they’re either at the peak of the Dunning-Kruger curve or they just love to argue

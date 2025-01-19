@@ -1,20 +1,21 @@
 ---
 title: Developer Joy
 author: Sindre J.I Sivertsen
-date: 2023-11-17 00:34:00 +0800
+date: 2024-11-17 00:34:00 +0800
 categories:
   - Opinion
 tags:
   - favicon
 ---
 
-In 2023, I attended a talk by Sven Peters from Atlassian titled _"Developer Joy - How Great Teams Get Sh%\*t Done"_ ([It’s a fantastic talk—you should check it out](https://www.youtube.com/watch?v=0wEmyhp6zK4)). 
+In 2023, I attended a talk by Sven Peters from Atlassian titled _"Developer Joy - How Great Teams Get Sh%\*t Done"_ ([It’s a fantastic talk—you should check it out](https://www.youtube.com/watch?v=0wEmyhp6zK4)).
 Developer productivity, according to Atlassian, is best measured through 'developer joy.'
 If organizations want to boost productivity in their engineering teams, their focus should be on fostering developer joy.
 
 As a developer, I love the sound of this. At first glance, it sounds like the best productivity strategy might involve management buying everyone pizza, installing a foosball table, and setting up emoji feedback buttons by the office exit—like the ones at airport security. I mean, it couldn’t hurt, right? But, unfortunately for my dreams of endless pizza, that’s not what Atlassian meant.
 
 Atlassian defines developer joy through three simple pillars: dev quality, dev progress, and dev value.
+
 - **Dev quality:** If I feel the code I’m writing is clean, well-crafted, and of high quality, then I’m scoring high on dev quality.
 - **Dev progress:** If the process of taking a task from the board to production is smooth and free of blockers, the team scores high on dev progress.
 - **Dev value:** If my work feels meaningful and valuable to others, it scores high on dev value.

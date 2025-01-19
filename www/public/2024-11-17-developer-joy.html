@@ -1,9 +1,9 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="date" content='2024-11-17 00:34:00 +0800'>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="date" content="2024-11-17 00:34:00 +0800" />
     <title>Developer Joy</title>
     <style>
       :root {
@@ -12,7 +12,8 @@
         --color-heading: #ffffff;
         --color-link: #4f9fff;
         --color-meta: #888888;
-        --font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        --font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          sans-serif;
       }
 
       body {
@@ -105,11 +106,49 @@
           margin: 2rem auto;
         }
       }
+
+      .back-button {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: var(--color-meta);
+        margin-bottom: 2rem;
+        transition: color 0.2s;
+      }
+      .back-button:hover {
+        color: var(--color-text);
+      }
+      .back-button svg {
+        width: 1.2em;
+        height: 1.2em;
+      }
     </style>
   </head>
   <body>
     <main>
+      <a href="../index.html" class="back-button">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M10 19l-7-7m0 0l7-7m-7 7h18"
+          />
+        </svg>
+        Back to Home
+      </a>
       <article>
+        <h1>Developer Joy</h1>
+        <div class="meta">
+          2024-11-17 00:34:00 +0800 • Sindre J.I Sivertsen
+          <span class="read-time"> min read</span>
+        </div>
+
         <p>In 2023, I attended a talk by Sven Peters from Atlassian
         titled <em>“Developer Joy - How Great Teams Get Sh%*t Done”</em>
         (<a href="https://www.youtube.com/watch?v=0wEmyhp6zK4">It’s a

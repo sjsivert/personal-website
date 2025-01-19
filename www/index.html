@@ -8,252 +8,137 @@
     ></script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="date" content="" />
-    <title></title>
+    <meta name="date" content="2025-01-19" />
+    <title>Sindre J. I. Sivertsen</title>
     <style>
-            :root {
-              --color-bg: #1a1a1a;
-              --color-text: #cccccc;
-              --color-heading: #ffffff;
-              --color-link: #4f9fff;
-              --color-meta: #888888;
-              --font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-                sans-serif;
-            }
+      :root {
+        --color-bg: #1a1a1a;
+        --color-text: #cccccc;
+        --color-heading: #ffffff;
+        --color-link: #4f9fff;
+        --color-meta: #888888;
+        --font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          sans-serif;
+      }
+      
+      #game-of-life-canvas {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.15;
+      }
 
-            #game-of-life-canvas {
-              position: fixed;
-              top: 0;
-              left: 0;
-              width: 100%;
-              height: 100%;
-              z-index: -1;
-              opacity: 0.15;
-            }
+      .container {
+        display: flex;
+        max-width: 1200px;
+        margin: 0 auto;
+        min-height: 100vh;
+      }
+      
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: var(--font-family);
+        background-color: var(--color-bg);
+        color: var(--color-text);
+        line-height: 1.7;
+      }
 
-            body {
-              margin: 0;
-              padding: 0;
-              font-family: var(--font-family);
-              background-color: var(--color-bg);
-              color: var(--color-text);
-              line-height: 1.7;
-              display: flex;
-              min-height: 100vh;
-            }
-
-            /* Rest of your existing styles */
-            aside {
-              width: 300px;
-              padding: 2rem;
-              border-right: 1px solid #333;
-              background: var(--color-bg);
-              position: relative;
-              z-index: 1;
-            }
-            .posts {
-              margin-top: 2rem;
-            }
-            .posts h2 {
-              font-size: 1.5rem;
-              margin-bottom: 1rem;
-            }
-            .posts ul {
-              list-style: none;
-              padding: 0;
-            }
-            .posts li {
-              margin-bottom: 1rem;
-            }
-            .posts a {
-              color: var(--color-link);
-              text-decoration: none;
-            }
-            .posts a:hover {
-              text-decoration: underline;
-            }
-            .posts .date {
-              color: var(--color-meta);
-              font-size: 0.9rem;
-              display: block;
-            }
-            main {
-              flex: 1;
-              padding: 3rem;
-              max-width: 800px;
-              background: rgba(26, 26, 26, 0.8);
-            }
-            .bio {
-              margin-bottom: 3rem;
-              display: flex;
-              align-items: center;
-              gap: 2rem;
-            }
-            .profile-image {
-              width: 120px;
-              height: 120px;
-              border-radius: 60px;
-              object-fit: cover;
-            }
-            .social-links {
-              display: flex;
-              gap: 1rem;
-            }
-            .social-links a {
-              color: var(--color-link);
-              text-decoration: none;
-            }
-            @media (max-width: 768px) {
-              body {
-                flex-direction: column;
-              }
-              aside {
-                width: auto;
-                border-right: none;
-                border-bottom: 1px solid #333;
-              }
-              .bio {
-                flex-direction: column;
-                text-align: center;
-              }
-              .profile-image {
-                margin: 0 auto;
-              }
-              <!DOCTYPE html>
-      <html lang="en">
-        <head>
-          <script
-            src="https://cdn.counter.dev/script.js"
-            data-id="5ae6cc8b-bfcc-4cbe-8afb-79bfad8ed1e7"
-            data-utcoffset="1"
-          ></script>
-          <meta charset="utf-8" />
-          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-          <meta name="date" content="2025-01-19" />
-          <title>Sindre J. I. Sivertsen</title>
-          <style>
-            :root {
-              --color-bg: #1a1a1a;
-              --color-text: #cccccc;
-              --color-heading: #ffffff;
-              --color-link: #4f9fff;
-              --color-meta: #888888;
-              --font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-                sans-serif;
-            }
-
-            #game-of-life-canvas {
-              position: fixed;
-              top: 0;
-              left: 0;
-              width: 100%;
-              height: 100%;
-              z-index: -1;
-              opacity: 0.15;
-            }
-
-            body {
-              margin: 0;
-              padding: 0;
-              font-family: var(--font-family);
-              background-color: var(--color-bg);
-              color: var(--color-text);
-              line-height: 1.7;
-              display: flex;
-              min-height: 100vh;
-            }
-
-            /* Rest of your existing styles */
-            aside {
-              width: 300px;
-              padding: 2rem;
-              border-right: 1px solid #333;
-              background: var(--color-bg);
-              position: relative;
-              z-index: 1;
-            }
-            .posts {
-              margin-top: 2rem;
-            }
-            .posts h2 {
-              font-size: 1.5rem;
-              margin-bottom: 1rem;
-            }
-            .posts ul {
-              list-style: none;
-              padding: 0;
-            }
-            .posts li {
-              margin-bottom: 1rem;
-            }
-            .posts a {
-              color: var(--color-link);
-              text-decoration: none;
-            }
-            .posts a:hover {
-              text-decoration: underline;
-            }
-            .posts .date {
-              color: var(--color-meta);
-              font-size: 0.9rem;
-              display: block;
-            }
-            main {
-              flex: 1;
-              padding: 3rem;
-              max-width: 800px;
-              background: rgba(26, 26, 26, 0.8);
-            }
-            .bio {
-              margin-bottom: 3rem;
-              display: flex;
-              align-items: center;
-              gap: 2rem;
-            }
-            .profile-image {
-              width: 120px;
-              height: 120px;
-              border-radius: 60px;
-              object-fit: cover;
-            }
-            .social-links {
-              display: flex;
-              gap: 1rem;
-            }
-            .social-links a {
-              color: var(--color-link);
-              text-decoration: none;
-            }
-            @media (max-width: 768px) {
-              body {
-                flex-direction: column;
-              }
-              aside {
-                width: auto;
-                border-right: none;
-                border-bottom: 1px solid #333;
-              }
-              .bio {
-                flex-direction: column;
-                text-align: center;
-              }
-              .profile-image {
-                margin: 0 auto;
-              }
-            }
+      /* Rest of your existing styles */
+      aside {
+        width: 300px;
+        padding: 2rem;
+        border-right: 1px solid #333;
+        background: var(--color-bg);
+        position: relative;
+        z-index: 1;
+      }
+      .posts {
+        margin-top: 2rem;
+      }
+      .posts h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+      }
+      .posts ul {
+        list-style: none;
+        padding: 0;
+      }
+      .posts li {
+        margin-bottom: 1rem;
+      }
+      .posts a {
+        color: var(--color-link);
+        text-decoration: none;
+      }
+      .posts a:hover {
+        text-decoration: underline;
+      }
+      .posts .date {
+        color: var(--color-meta);
+        font-size: 0.9rem;
+        display: block;
+      }
+      main {
+        flex: 1;
+        padding: 3rem;
+        max-width: 800px;
+        background: rgba(26, 26, 26, 1);
+      }
+      .bio {
+        margin-bottom: 3rem;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+      }
+      .profile-image {
+        width: 120px;
+        height: 120px;
+        border-radius: 60px;
+        object-fit: cover;
+      }
+      .social-links {
+        display: flex;
+        gap: 1rem;
+      }
+      .social-links a {
+        color: var(--color-link);
+        text-decoration: none;
+      }
+      @media (max-width: 768px) {
+        .container {
+          flex-direction: column;
+        }
+        aside {
+          width: auto;
+          border-right: none;
+          border-bottom: 1px solid #333;
+        }
+        .bio {
+          flex-direction: column;
+          text-align: center;
+        }
+        .profile-image {
+          margin: 0 auto;
+        }
+      }
     </style>
   </head>
   <body>
     <canvas id="game-of-life-canvas"></canvas>
-    <aside>
-      <div class="posts"><div class="posts">
+    <div class="container">
+      <aside>
+        <div class="posts"><div class="posts">
 <h2>
 Recent Posts
 </h2>
 <ul>
 <li>
 <span class="date">November 17, 2024</span>
-<a href="/public/2024-11-17-developer-joy.html">Developer joy</a>
+<a href="public/2024-11-17-developer-joy.html">Developer joy</a>
 </li>
 </ul>
 </div></div>
@@ -291,22 +176,22 @@ Recent Posts
       class GameOfLife {
         constructor(canvas) {
           this.canvas = canvas;
-          this.ctx = canvas.getContext("2d");
+          this.ctx = canvas.getContext('2d');
           this.cellSize = 10;
           this.resize();
-
+          
           // Initialize grid
           this.grid = this.createGrid();
           this.nextGrid = this.createGrid();
-
+          
           // Add some random initial cells
           this.randomize();
-
+          
           // Start the animation
           this.animate();
 
           // Handle window resize
-          window.addEventListener("resize", () => this.resize());
+          window.addEventListener('resize', () => this.resize());
         }
 
         resize() {
@@ -317,9 +202,7 @@ Recent Posts
         }
 
         createGrid() {
-          return Array(this.rows)
-            .fill()
-            .map(() => Array(this.cols).fill(0));
+          return Array(this.rows).fill().map(() => Array(this.cols).fill(0));
         }
 
         randomize() {
@@ -348,8 +231,7 @@ Recent Posts
             for (let j = 0; j < this.cols; j++) {
               let neighbors = this.countNeighbors(this.grid, i, j);
               if (this.grid[i][j] === 1) {
-                this.nextGrid[i][j] =
-                  neighbors === 2 || neighbors === 3 ? 1 : 0;
+                this.nextGrid[i][j] = neighbors === 2 || neighbors === 3 ? 1 : 0;
               } else {
                 this.nextGrid[i][j] = neighbors === 3 ? 1 : 0;
               }
@@ -361,10 +243,10 @@ Recent Posts
         }
 
         draw() {
-          this.ctx.fillStyle = "#1a1a1a";
+          this.ctx.fillStyle = '#1a1a1a';
           this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
-
-          this.ctx.fillStyle = "#4f9fff";
+          
+          this.ctx.fillStyle = '#4f9fff';
           for (let i = 0; i < this.rows; i++) {
             for (let j = 0; j < this.cols; j++) {
               if (this.grid[i][j] === 1) {
@@ -383,13 +265,12 @@ Recent Posts
           // Slow down animation by only updating every 5th frame
           if (!this.frameCount) this.frameCount = 0;
           this.frameCount++;
-
+          
           if (this.frameCount % 5 === 0) {
             this.update();
-
+            
             // Add some random cells occasionally to keep it interesting
-            if (Math.random() < 0.01) {
-              // 1% chance each update
+            if (Math.random() < 0.01) {  // 1% chance each update
               for (let i = 0; i < 3; i++) {
                 const x = Math.floor(Math.random() * this.rows);
                 const y = Math.floor(Math.random() * this.cols);
@@ -397,15 +278,15 @@ Recent Posts
               }
             }
           }
-
+          
           this.draw();
           requestAnimationFrame(() => this.animate());
         }
       }
 
       // Start the Game of Life when the page loads
-      window.addEventListener("load", () => {
-        const canvas = document.getElementById("game-of-life-canvas");
+      window.addEventListener('load', () => {
+        const canvas = document.getElementById('game-of-life-canvas');
         new GameOfLife(canvas);
       });
     </script>

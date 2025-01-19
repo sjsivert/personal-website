@@ -54,7 +54,7 @@ for name in $(find articles -type f -exec basename {} \; | sort -ur | sed 's/\.m
     
     echo "    <li>" >> www/_index.md
     echo "      <span class=\"date\">$month_name $day, $year</span>" >> www/_index.md
-    echo "      <a href=\"/public/$name.html\">$title</a>" >> www/_index.md
+    echo "      <a href=\"public/$name.html\">$title</a>" >> www/_index.md
     echo "    </li>" >> www/_index.md
   else
     echo "Skipping $name (not published)"

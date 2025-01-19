@@ -27,12 +27,12 @@ for name in $(find articles -type f -exec basename {} \; | sort -ur | sed 's/\.m
     echo -e "\n## $year\n" >> www/_index.md
   fi
   current_year=$year
-  echo "- [$nice_title](public/$name.html)" >> _index.md
+  echo "- [$nice_title](public/$name.html)" >> www/_index.md
 
 done
 
 pandoc \
 	--standalone \
 	--template index_template.html \
-	_index.md \
+	www/_index.md \
 	-o www/index.html

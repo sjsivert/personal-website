@@ -2,6 +2,7 @@
 title: Developer Joy
 author: Sindre J.I Sivertsen
 date: 2024-11-17 00:34:00 +0800
+read-time: 5
 categories:
   - Opinion
 tags:

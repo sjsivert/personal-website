@@ -37,6 +37,10 @@ jobs:
         uses: actions/configure-pages@v5
       - name: Build website
         run: ./indexgenerator.sh
+
+      - name: Copy CNAME file
+        run: cp CNAME www/
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

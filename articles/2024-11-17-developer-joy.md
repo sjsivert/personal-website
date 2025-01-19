@@ -54,8 +54,6 @@ A simple way to tighten this loop? Write a test. Unit tests in iteratively compi
 
 Writing a test early on is an investment that pays off both short-term, while you’re building the code, and long-term, when someone else (or future you) makes changes. For me, putting in a bit of effort upfront to keep the feedback loop fast is always worth it!
 
----
-
 ## The pull request
 
 You (think) you’re done writing some code, and it’s time to share it with the world—or at least with the team. For a software developer, that means creating a pull request and bracing yourself for code review. But before you want to request a review from that senior developer that always catch you in doing silly mistakes you wished you found yourself before requesting a review, you should wait for the required pipelines to go green. The art of writing speedy pipelines deserves a post of it's own, but in short:

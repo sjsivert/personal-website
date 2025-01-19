@@ -8,7 +8,7 @@ for article in $(ls articles); do
 	echo $article
 	pandoc \
 	--standalone \
-	--template template.html \
+	--template templates/blog_template.html \
 	"articles/$article" \
 	-o "www/public/$(basename $article .md).html"
 done
@@ -33,6 +33,6 @@ done
 
 pandoc \
 	--standalone \
-	--template index_template.html \
+	--template templates/index_template.html \
 	www/_index.md \
 	-o www/index.html

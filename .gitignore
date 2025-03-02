@@ -1,1 +1,5 @@
 .DS_STORE
+www/*.md
+www/_index.md
+www/index.html
+www/public

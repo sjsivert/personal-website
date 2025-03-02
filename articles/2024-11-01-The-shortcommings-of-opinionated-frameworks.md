@@ -22,13 +22,15 @@ An **opinionated framework** typically exhibits the following characteristics:
 
 Examples of opinionated frameworks include Angular, Django, and Ember, which provide strong conventions and tools that help maintain consistency but limit flexibility in how you can structure applications.
 
-Opinionated frameworks aren’t all bad. In fact, they can be the reliable, albeit slightly bossy, teammate we didn’t know we needed. Sure, they have a strict way of doing things, but sometimes that’s exactly what helps keep the codebase from turning into spaghetti. Here are some reasons why some developers actually _like_ being told what to do.
+Opinionated frameworks aren’t all bad. In fact, they can be the reliable, albeit slightly bossy, teammate we didn’t know we needed. Sure, they have a strict way of doing things, but sometimes that’s exactly what helps keep the codebase from turning into spaghetti. Some reasons why some developers actually _like_ being told what to do:
 
 - Opinionated Establishing strong patterns makes it easy for everyone on the team to read and write code.
 - Consistent use of patterns simplifies onboarding to new codebases that share the same patterns as developers can quickly understand the structure and flow.
 - The "batteries included" philosophy can be a great advantage. With built-in features, you can rely on the framework or language to provide many of the tools you need, reducing the time spent on setup.
 - Getting started is fast, as a well-structured environment allows developers to focus on solving problems rather than configuring the project.
 - Minimal boilerplate code helps keep the codebase clean and efficient, avoiding unnecessary complexity.
+
+The constraints that opinionated frameworks impose can actually boost productivity. Starting from a blank slate can be overwhelming, and a little structure goes a long way. When I first started following the [conventional commits convention](https://www.conventionalcommits.org/en/v1.0.0/), writing commit messages suddenly got easier. With a set format, I didn’t have to overthink, and I ended up writing longer, more descriptive commits.
 
 While there are plenty of upsides, that 'reliable, bossy teammate' can sometimes morph into the micromanaging colleague who won’t let you color outside the lines. Let’s dig into the drawbacks of these frameworks and why they might not be everyone’s cup of tea.
 
@@ -51,15 +53,17 @@ If I can’t see how a function is called or lose the ability to trace the code 
 
 It reminds me of middle school when a student struggled to grasp a new math concept, and the teacher, unable to fully explain it, would just say, "That’s just how it is." Magic may feel cool when everything works smoothly. It can make you feel super productive in the short term. But let me tell you, it’s far from cool when things break. That once-cool "magic" quickly turns into a major headache.
 
-But the constraints that opinionated frameworks impose can actually boost productivity. Starting from a blank slate can be overwhelming, and a little structure goes a long way. When I first started following the [conventional commits convention](https://www.conventionalcommits.org/en/v1.0.0/), writing commit messages suddenly got easier. With a set format, I didn’t have to overthink, and I ended up writing longer, more descriptive commits. This is probably the second-best argument for opinionated frameworks with strong conventions.
-
-Personally, I feel that the Vue frontend framework hits the perfect balance between convention and flexibility. Vue’s [style guide](https://vuejs.org/style-guide/) includes patterns and anti-patterns, offering just enough structure to keep us productive while still allowing room to step outside the guidelines when needed. You can still follow sensible defaults and strong patterns without a frameworks forcing hand.
+High-quality code is a trade-off between readability, changeability, and reusability. Introducing a layer of abstraction is a great way to increase reusability and changeability, but it comes at a cost. Abstraction increases code complexity, making it harder for a new team member to understand why it was introduced and what problem it solved.
 
 During a summer internship, I worked on a consulting project where a senior developer, known for their strong opinions, was part of the team. We were building a backend-for-frontend service using a minimal Kotlin framework called Http4k. Up until that point, my experience had been with large, feature-heavy frameworks, but Http4k was different. We followed a Domain Driven Design pattern and embraced the "Server as a Function" philosophy (you can check it out [here](https://www.youtube.com/watch?v=NjoCjupV8HE)).
 
 The framework provided very little out of the box, and that was perfectly fine. Each initial slice of functionality was simple. We passed dependencies into the constructors of each class, and as the number of dependencies grew, we built a basic dependency service to handle them.
 
 As the project evolved, so did its complexity and abstractions, but we only introduced them when necessary, taking the time to refactor and improve the code along the way. By the end of the summer, I understood every part of the codebase and knew exactly what problem each piece solved. Tackling complexity as it arose and solving problems as they emerged felt far more satisfying than blindly following a large framework’s way of doing things without fully understanding the “why” behind it or the specific issues it was meant to solve.
+
+The "why" here is important. A framework is built to solve problems someone else has experienced. The chances that your projects needs perfectly overlaps that of the frameworks is close to zero. If you are writing most of the pieces yourself, then code complexity will only increase when a certain pain point is met. So the overall code complexity for the project will be lower.
+
+Personally, I feel that the Vue frontend framework hits the perfect balance between convention and flexibility. Vue’s [style guide](https://vuejs.org/style-guide/) includes patterns and anti-patterns, offering just enough structure to keep us productive while still allowing room to step outside the guidelines when needed. You can still follow sensible defaults and strong patterns without a frameworks forcing hand.
 
 James Shore argues against the “buy vs build” dilemma in a blogpost of his that hits the nail on the head:
 

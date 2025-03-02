@@ -1,7 +1,7 @@
 ---
 title: The shortcommings of opinionated frameworks
 author: Sindre J.I Sivertsen
-date: 17-11-2024
+date: 02-03-2025
 read-time: 5
 categories: [Blogging, Opinion]
 tags: [favicon]

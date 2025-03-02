@@ -12,7 +12,7 @@ Ever notice how leading experts in science often give cautious, reserved answers
 
 That said, I’d like to present an opinion that has developed over the course of my career as a software developer: I am not a fan of highly **opinionated frameworks.**..
 
-![../assets/img/dunning-kruger.png](../assets/img/dunning-kruger.png)
+![The dunning gruger effect: [https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect](Dunning-Kruger)](../assets/img/dunning-kruger.png)
 
 An **opinionated framework** typically exhibits the following characteristics:
 

@@ -1,4 +1,4 @@
-[[Expo updates og CD]]
+[[2025-09-07-expo-ota-updates-trunk-based-development]]
 
 - .NET bygg pipelines optimalisering
 - Trygge databasemigreringer i prod

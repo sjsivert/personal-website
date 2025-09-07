@@ -2,6 +2,10 @@
   <h2>Recent Posts</h2>
   <ul>
     <li>
+      <span class="date">September 07, 2025</span>
+      <a href="public/2025-09-07-expo-ota-updates-trunk-based-development.html">Expo ota updates trunk based development</a>
+    </li>
+    <li>
       <span class="date">March 02, 2025</span>
       <a href="public/2025-03-02-The-shortcommings-of-opinionated-frameworks.html">The shortcommings of opinionated frameworks</a>
     </li>
